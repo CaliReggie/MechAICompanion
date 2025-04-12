@@ -70,8 +70,6 @@ public class TileGrid : MonoBehaviour
         
         BoundsInt bounds = _tileMap.cellBounds;
         Tile currTile = null;
-        
-        Debug.Log("Bounds: " + bounds);
 
         for (int x = bounds.x; x < bounds.xMax; x++)
         {
@@ -122,13 +120,10 @@ public class TileGrid : MonoBehaviour
                 
                 Vector3Int neighbourPosition = tile.gridPosition + offset;
                 
-                
                 if (gridTiles.Exists(t => t.gridPosition == neighbourPosition))
                 {
                     Tile neighbourTile = _tileMap.GetTile<Tile>(neighbourPosition);
-                    
-                    Debug.Log("Tile: " + tile.name + " Neighbour: " + neighbour.ToString() + " Position: " + neighbourPosition + " Tile: " + neighbourTile);
-                    
+
                     if (neighbourTile == null || ignoredTiles != null &&
                         Array.Exists(ignoredTiles, t => t == neighbourTile))
                     {

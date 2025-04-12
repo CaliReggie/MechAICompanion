@@ -238,7 +238,2683 @@ MonoBehaviour:
   ignoredTiles: []
   showAllPositions: 0
   showTargetPositions: 1
-  gridTiles: []
+  gridTiles:
+  - name: BlockedTile (-3, -11)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -11, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: -10.5, z: 0}
+    neighbours: 3
+    isTargetPosition: 0
+  - name: BlockedTile (-2, -11)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -11, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: -11, z: 0}
+    neighbours: 35
+    isTargetPosition: 0
+  - name: BlockedTile (-1, -11)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -11, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: -10.5, z: 0}
+    neighbours: 35
+    isTargetPosition: 0
+  - name: BlockedTile (0, -11)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -11, y: 0, z: 0}
+    worldPosition: {x: 0, y: -11, z: 0}
+    neighbours: 35
+    isTargetPosition: 0
+  - name: BlockedTile (1, -11)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -11, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: -10.5, z: 0}
+    neighbours: 33
+    isTargetPosition: 0
+  - name: BlockedTile (3, -11)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -11, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: -10.5, z: 0}
+    neighbours: 1
+    isTargetPosition: 0
+  - name: BlockedTile (-5, -10)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -10, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: -9.5, z: 0}
+    neighbours: 3
+    isTargetPosition: 0
+  - name: BlockedTile (-4, -10)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -10, y: -4, z: 0}
+    worldPosition: {x: -3, y: -10, z: 0}
+    neighbours: 39
+    isTargetPosition: 0
+  - name: BaseTile (-3, -10)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -10, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: -9.5, z: 0}
+    neighbours: 47
+    isTargetPosition: 0
+  - name: BaseTile (-2, -10)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -10, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: -10, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (-1, -10)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: -10, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: -9.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: HQTile (0, -10)
+    tile: {fileID: 11400000, guid: bc46b4b7f9dd7a34ab533f03fc31f976, type: 2}
+    gridPosition: {x: -10, y: 0, z: 0}
+    worldPosition: {x: 0, y: -10, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (1, -10)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: -10, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: -9.5, z: 0}
+    neighbours: 59
+    isTargetPosition: 0
+  - name: BlockedTile (2, -10)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -10, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: -10, z: 0}
+    neighbours: 55
+    isTargetPosition: 0
+  - name: BaseTile (3, -10)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -10, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: -9.5, z: 0}
+    neighbours: 43
+    isTargetPosition: 0
+  - name: BlockedTile (4, -10)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -10, y: 4, z: 0}
+    worldPosition: {x: 3, y: -10, z: 0}
+    neighbours: 51
+    isTargetPosition: 0
+  - name: BlockedTile (5, -10)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -10, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: -9.5, z: 0}
+    neighbours: 33
+    isTargetPosition: 0
+  - name: BlockedTile (-6, -9)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -9, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: -9, z: 0}
+    neighbours: 7
+    isTargetPosition: 0
+  - name: BaseTile (-5, -9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -9, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: -8.5, z: 0}
+    neighbours: 47
+    isTargetPosition: 0
+  - name: BaseTile (-4, -9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -9, y: -4, z: 0}
+    worldPosition: {x: -3, y: -9, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, -9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -9, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: -8.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (-2, -9)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: -9, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: -9, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, -9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -9, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: -8.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (0, -9)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: -9, y: 0, z: 0}
+    worldPosition: {x: 0, y: -9, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, -9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -9, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: -8.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (2, -9)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: -9, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: -9, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, -9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -9, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: -8.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, -9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -9, y: 4, z: 0}
+    worldPosition: {x: 3, y: -9, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, -9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -9, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: -8.5, z: 0}
+    neighbours: 59
+    isTargetPosition: 0
+  - name: BlockedTile (6, -9)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -9, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: -9, z: 0}
+    neighbours: 51
+    isTargetPosition: 0
+  - name: BlockedTile (7, -9)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -9, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: -8.5, z: 0}
+    neighbours: 33
+    isTargetPosition: 0
+  - name: BlockedTile (-6, -8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -8, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: -8, z: 0}
+    neighbours: 15
+    isTargetPosition: 0
+  - name: BaseTile (-5, -8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -8, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: -7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, -8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -8, y: -4, z: 0}
+    worldPosition: {x: -3, y: -8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-3, -8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -8, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: -7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, -8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -8, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: -8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, -8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -8, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: -7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (0, -8)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: -8, y: 0, z: 0}
+    worldPosition: {x: 0, y: -8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, -8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -8, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: -7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, -8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -8, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: -8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (3, -8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -8, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: -7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, -8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -8, y: 4, z: 0}
+    worldPosition: {x: 3, y: -8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, -8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -8, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: -7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (6, -8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -8, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: -8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (7, -8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -8, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: -7.5, z: 0}
+    neighbours: 59
+    isTargetPosition: 0
+  - name: BlockedTile (8, -8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -8, y: 8, z: 0}
+    worldPosition: {x: 6, y: -8, z: 0}
+    neighbours: 51
+    isTargetPosition: 0
+  - name: BlockedTile (9, -8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -8, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: -7.5, z: 0}
+    neighbours: 33
+    isTargetPosition: 0
+  - name: BlockedTile (-7, -7)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -7, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: -6.5, z: 0}
+    neighbours: 7
+    isTargetPosition: 0
+  - name: BlockedTile (-6, -7)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -7, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: -7, z: 0}
+    neighbours: 47
+    isTargetPosition: 0
+  - name: BaseTile (-5, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: -6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: -4, z: 0}
+    worldPosition: {x: -3, y: -7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: -6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: -7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: -6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (0, -7)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -7, y: 0, z: 0}
+    worldPosition: {x: 0, y: -7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: -6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: -7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: -6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: 4, z: 0}
+    worldPosition: {x: 3, y: -7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: -6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (6, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: -7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (7, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: -6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (8, -7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -7, y: 8, z: 0}
+    worldPosition: {x: 6, y: -7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (9, -7)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -7, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: -6.5, z: 0}
+    neighbours: 57
+    isTargetPosition: 0
+  - name: BlockedTile (-9, -6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -6, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: -5.5, z: 0}
+    neighbours: 3
+    isTargetPosition: 0
+  - name: BlockedTile (-8, -6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -6, y: -8, z: 0}
+    worldPosition: {x: -6, y: -6, z: 0}
+    neighbours: 39
+    isTargetPosition: 0
+  - name: BaseTile (-7, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: -5.5, z: 0}
+    neighbours: 47
+    isTargetPosition: 0
+  - name: BaseTile (-6, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: -6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-5, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: -5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: -4, z: 0}
+    worldPosition: {x: -3, y: -6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: -5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: -6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: -5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (0, -6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -6, y: 0, z: 0}
+    worldPosition: {x: 0, y: -6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: -5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: -6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: -5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: 4, z: 0}
+    worldPosition: {x: 3, y: -6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: -5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (6, -6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -6, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: -6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (7, -6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -6, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: -5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (8, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: 8, z: 0}
+    worldPosition: {x: 6, y: -6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (9, -6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -6, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: -5.5, z: 0}
+    neighbours: 59
+    isTargetPosition: 0
+  - name: BlockedTile (10, -6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -6, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: -6, z: 0}
+    neighbours: 51
+    isTargetPosition: 0
+  - name: BlockedTile (11, -6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -6, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: -5.5, z: 0}
+    neighbours: 33
+    isTargetPosition: 0
+  - name: BlockedTile (-11, -5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -5, y: -11, z: 0}
+    worldPosition: {x: -8.25, y: -4.5, z: 0}
+    neighbours: 3
+    isTargetPosition: 0
+  - name: BlockedTile (-10, -5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -5, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: -5, z: 0}
+    neighbours: 39
+    isTargetPosition: 0
+  - name: BaseTile (-9, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: -4.5, z: 0}
+    neighbours: 47
+    isTargetPosition: 0
+  - name: BaseTile (-8, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: -8, z: 0}
+    worldPosition: {x: -6, y: -5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: -4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-6, -5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -5, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: -5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-5, -5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -5, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: -4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: -4, z: 0}
+    worldPosition: {x: -3, y: -5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: -4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-2, -5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -5, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: -5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-1, -5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -5, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: -4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (0, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: 0, z: 0}
+    worldPosition: {x: 0, y: -5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (1, -5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -5, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: -4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (2, -5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -5, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: -5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: -4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: 4, z: 0}
+    worldPosition: {x: 3, y: -5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: -4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (6, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: -5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (7, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: -4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (8, -5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -5, y: 8, z: 0}
+    worldPosition: {x: 6, y: -5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (9, -5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -5, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: -4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: -5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (11, -5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -5, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: -4.5, z: 0}
+    neighbours: 59
+    isTargetPosition: 0
+  - name: BlockedTile (12, -5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -5, y: 12, z: 0}
+    worldPosition: {x: 9, y: -5, z: 0}
+    neighbours: 49
+    isTargetPosition: 0
+  - name: BlockedTile (-12, -4)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -4, y: -12, z: 0}
+    worldPosition: {x: -9, y: -4, z: 0}
+    neighbours: 7
+    isTargetPosition: 0
+  - name: BaseTile (-11, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: -11, z: 0}
+    worldPosition: {x: -8.25, y: -3.5, z: 0}
+    neighbours: 47
+    isTargetPosition: 0
+  - name: BaseTile (-10, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: -4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-9, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: -3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-8, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: -8, z: 0}
+    worldPosition: {x: -6, y: -4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: -3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-6, -4)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -4, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: -4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-5, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: -3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: ShopTile (-4, -4)
+    tile: {fileID: 11400000, guid: b7905da8c2842604b86aff52432f50aa, type: 2}
+    gridPosition: {x: -4, y: -4, z: 0}
+    worldPosition: {x: -3, y: -4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: -3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: -4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: -3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (0, -4)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -4, y: 0, z: 0}
+    worldPosition: {x: 0, y: -4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: -3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: -4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: -3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: 4, z: 0}
+    worldPosition: {x: 3, y: -4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: ShopTile (5, -4)
+    tile: {fileID: 11400000, guid: b7905da8c2842604b86aff52432f50aa, type: 2}
+    gridPosition: {x: -4, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: -3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (6, -4)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -4, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: -4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (7, -4)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -4, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: -3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (8, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: 8, z: 0}
+    worldPosition: {x: 6, y: -4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (9, -4)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -4, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: -3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: -4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (11, -4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -4, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: -3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (12, -4)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -4, y: 12, z: 0}
+    worldPosition: {x: 9, y: -4, z: 0}
+    neighbours: 57
+    isTargetPosition: 0
+  - name: BlockedTile (-12, -3)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -3, y: -12, z: 0}
+    worldPosition: {x: -9, y: -3, z: 0}
+    neighbours: 15
+    isTargetPosition: 0
+  - name: BaseTile (-11, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: -11, z: 0}
+    worldPosition: {x: -8.25, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-10, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: -3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-9, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-8, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: -8, z: 0}
+    worldPosition: {x: -6, y: -3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-6, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: -3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-5, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: -4, z: 0}
+    worldPosition: {x: -3, y: -3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: -3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (0, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: 0, z: 0}
+    worldPosition: {x: 0, y: -3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: -3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: 4, z: 0}
+    worldPosition: {x: 3, y: -3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (6, -3)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -3, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: -3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (7, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (8, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: 8, z: 0}
+    worldPosition: {x: 6, y: -3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (9, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: -3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (11, -3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -3, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: -2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (12, -3)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -3, y: 12, z: 0}
+    worldPosition: {x: 9, y: -3, z: 0}
+    neighbours: 59
+    isTargetPosition: 0
+  - name: BlockedTile (13, -3)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -3, y: 13, z: 0}
+    worldPosition: {x: 9.75, y: -2.5, z: 0}
+    neighbours: 49
+    isTargetPosition: 0
+  - name: BlockedTile (-12, -2)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -2, y: -12, z: 0}
+    worldPosition: {x: -9, y: -2, z: 0}
+    neighbours: 15
+    isTargetPosition: 0
+  - name: BaseTile (-11, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: -11, z: 0}
+    worldPosition: {x: -8.25, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-10, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-9, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-8, -2)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -2, y: -8, z: 0}
+    worldPosition: {x: -6, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-6, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-5, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: -4, z: 0}
+    worldPosition: {x: -3, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (0, -2)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -2, y: 0, z: 0}
+    worldPosition: {x: 0, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: 4, z: 0}
+    worldPosition: {x: 3, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (6, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (7, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (8, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: 8, z: 0}
+    worldPosition: {x: 6, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (9, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (11, -2)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: -2, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: -1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (12, -2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -2, y: 12, z: 0}
+    worldPosition: {x: 9, y: -2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (13, -2)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -2, y: 13, z: 0}
+    worldPosition: {x: 9.75, y: -1.5, z: 0}
+    neighbours: 57
+    isTargetPosition: 0
+  - name: BlockedTile (-12, -1)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -1, y: -12, z: 0}
+    worldPosition: {x: -9, y: -1, z: 0}
+    neighbours: 15
+    isTargetPosition: 0
+  - name: MechSpawnTile (-11, -1)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: -1, y: -11, z: 0}
+    worldPosition: {x: -8.25, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (-10, -1)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: -1, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-9, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-8, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: -8, z: 0}
+    worldPosition: {x: -6, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-6, -1)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -1, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-5, -1)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -1, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: -4, z: 0}
+    worldPosition: {x: -3, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (0, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: 0, z: 0}
+    worldPosition: {x: 0, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: 4, z: 0}
+    worldPosition: {x: 3, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (6, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (7, -1)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -1, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (8, -1)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -1, y: 8, z: 0}
+    worldPosition: {x: 6, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (9, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, -1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: -1, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (11, -1)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: -1, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: -0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (12, -1)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: -1, y: 12, z: 0}
+    worldPosition: {x: 9, y: -1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (13, -1)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: -1, y: 13, z: 0}
+    worldPosition: {x: 9.75, y: -0.5, z: 0}
+    neighbours: 57
+    isTargetPosition: 0
+  - name: BlockedTile (-12, 0)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 0, y: -12, z: 0}
+    worldPosition: {x: -9, y: 0, z: 0}
+    neighbours: 15
+    isTargetPosition: 0
+  - name: HQTile (-11, 0)
+    tile: {fileID: 11400000, guid: bc46b4b7f9dd7a34ab533f03fc31f976, type: 2}
+    gridPosition: {x: 0, y: -11, z: 0}
+    worldPosition: {x: -8.25, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (-10, 0)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 0, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-9, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-8, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: -8, z: 0}
+    worldPosition: {x: -6, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-6, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-5, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-4, 0)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 0, y: -4, z: 0}
+    worldPosition: {x: -3, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: HiveTIle (0, 0)
+    tile: {fileID: 11400000, guid: a725593508360284699aa0d2a93cf531, type: 2}
+    gridPosition: {x: 0, y: 0, z: 0}
+    worldPosition: {x: 0, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: HiveTIle (1, 0)
+    tile: {fileID: 11400000, guid: a725593508360284699aa0d2a93cf531, type: 2}
+    gridPosition: {x: 0, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: 4, z: 0}
+    worldPosition: {x: 3, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (6, 0)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 0, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (7, 0)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 0, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (8, 0)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 0, y: 8, z: 0}
+    worldPosition: {x: 6, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (9, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, 0)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 0, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (11, 0)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 0, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: 0.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: HQTile (12, 0)
+    tile: {fileID: 11400000, guid: bc46b4b7f9dd7a34ab533f03fc31f976, type: 2}
+    gridPosition: {x: 0, y: 12, z: 0}
+    worldPosition: {x: 9, y: 0, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (13, 0)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 0, y: 13, z: 0}
+    worldPosition: {x: 9.75, y: 0.5, z: 0}
+    neighbours: 57
+    isTargetPosition: 0
+  - name: BlockedTile (-12, 1)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 1, y: -12, z: 0}
+    worldPosition: {x: -9, y: 1, z: 0}
+    neighbours: 15
+    isTargetPosition: 0
+  - name: MechSpawnTile (-11, 1)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 1, y: -11, z: 0}
+    worldPosition: {x: -8.25, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (-10, 1)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 1, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-9, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-8, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: -8, z: 0}
+    worldPosition: {x: -6, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-6, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-5, 1)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 1, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-4, 1)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 1, y: -4, z: 0}
+    worldPosition: {x: -3, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: HiveTIle (0, 1)
+    tile: {fileID: 11400000, guid: a725593508360284699aa0d2a93cf531, type: 2}
+    gridPosition: {x: 1, y: 0, z: 0}
+    worldPosition: {x: 0, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: 4, z: 0}
+    worldPosition: {x: 3, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (6, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (7, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (8, 1)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 1, y: 8, z: 0}
+    worldPosition: {x: 6, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (9, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, 1)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 1, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (11, 1)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 1, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: 1.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (12, 1)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 1, y: 12, z: 0}
+    worldPosition: {x: 9, y: 1, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (13, 1)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 1, y: 13, z: 0}
+    worldPosition: {x: 9.75, y: 1.5, z: 0}
+    neighbours: 57
+    isTargetPosition: 0
+  - name: BlockedTile (-12, 2)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 2, y: -12, z: 0}
+    worldPosition: {x: -9, y: 2, z: 0}
+    neighbours: 15
+    isTargetPosition: 0
+  - name: BaseTile (-11, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: -11, z: 0}
+    worldPosition: {x: -8.25, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (-10, 2)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 2, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-9, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-8, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: -8, z: 0}
+    worldPosition: {x: -6, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-6, 2)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 2, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-5, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: -4, z: 0}
+    worldPosition: {x: -3, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (0, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 0, z: 0}
+    worldPosition: {x: 0, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 4, z: 0}
+    worldPosition: {x: 3, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (6, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (7, 2)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 2, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (8, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 8, z: 0}
+    worldPosition: {x: 6, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (9, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (11, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: 2.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (12, 2)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 2, y: 12, z: 0}
+    worldPosition: {x: 9, y: 2, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (13, 2)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 2, y: 13, z: 0}
+    worldPosition: {x: 9.75, y: 2.5, z: 0}
+    neighbours: 57
+    isTargetPosition: 0
+  - name: BlockedTile (-12, 3)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 3, y: -12, z: 0}
+    worldPosition: {x: -9, y: 3, z: 0}
+    neighbours: 15
+    isTargetPosition: 0
+  - name: BaseTile (-11, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: -11, z: 0}
+    worldPosition: {x: -8.25, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-10, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-9, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-8, 3)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 3, y: -8, z: 0}
+    worldPosition: {x: -6, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-6, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-5, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: -4, z: 0}
+    worldPosition: {x: -3, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (0, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 0, z: 0}
+    worldPosition: {x: 0, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 4, z: 0}
+    worldPosition: {x: 3, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (6, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (7, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (8, 3)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 3, y: 8, z: 0}
+    worldPosition: {x: 6, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (9, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (11, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: 3.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (12, 3)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 3, y: 12, z: 0}
+    worldPosition: {x: 9, y: 3, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (13, 3)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 3, y: 13, z: 0}
+    worldPosition: {x: 9.75, y: 3.5, z: 0}
+    neighbours: 57
+    isTargetPosition: 0
+  - name: BlockedTile (-12, 4)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 4, y: -12, z: 0}
+    worldPosition: {x: -9, y: 4, z: 0}
+    neighbours: 14
+    isTargetPosition: 0
+  - name: BlockedTile (-11, 4)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 4, y: -11, z: 0}
+    worldPosition: {x: -8.25, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-10, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-9, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-8, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: -8, z: 0}
+    worldPosition: {x: -6, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-6, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-5, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: -4, z: 0}
+    worldPosition: {x: -3, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (0, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 0, z: 0}
+    worldPosition: {x: 0, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 4, z: 0}
+    worldPosition: {x: 3, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: ShopTile (5, 4)
+    tile: {fileID: 11400000, guid: b7905da8c2842604b86aff52432f50aa, type: 2}
+    gridPosition: {x: 4, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (6, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (7, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (8, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 8, z: 0}
+    worldPosition: {x: 6, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (9, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (11, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: 4.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (12, 4)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 4, y: 12, z: 0}
+    worldPosition: {x: 9, y: 4, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (13, 4)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 4, y: 13, z: 0}
+    worldPosition: {x: 9.75, y: 4.5, z: 0}
+    neighbours: 56
+    isTargetPosition: 0
+  - name: BlockedTile (-11, 5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 5, y: -11, z: 0}
+    worldPosition: {x: -8.25, y: 5.5, z: 0}
+    neighbours: 30
+    isTargetPosition: 0
+  - name: BaseTile (-10, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: 5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-9, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: 5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-8, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: -8, z: 0}
+    worldPosition: {x: -6, y: 5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: 5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-6, 5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 5, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: 5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-5, 5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 5, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: 5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: ShopTile (-4, 5)
+    tile: {fileID: 11400000, guid: b7905da8c2842604b86aff52432f50aa, type: 2}
+    gridPosition: {x: 5, y: -4, z: 0}
+    worldPosition: {x: -3, y: 5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: 5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-1, 5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 5, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: 5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (0, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: 0, z: 0}
+    worldPosition: {x: 0, y: 5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (1, 5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 5, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: 5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: 5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: 4, z: 0}
+    worldPosition: {x: 3, y: 5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (5, 5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 5, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: 5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (6, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: 5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (7, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: 5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (8, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: 8, z: 0}
+    worldPosition: {x: 6, y: 5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (9, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: 5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, 5)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 5, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: 5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (11, 5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 5, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: 5.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (12, 5)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 5, y: 12, z: 0}
+    worldPosition: {x: 9, y: 5, z: 0}
+    neighbours: 60
+    isTargetPosition: 0
+  - name: BlockedTile (-10, 6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 6, y: -10, z: 0}
+    worldPosition: {x: -7.5, y: 6, z: 0}
+    neighbours: 30
+    isTargetPosition: 0
+  - name: BlockedTile (-9, 6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 6, y: -9, z: 0}
+    worldPosition: {x: -6.75, y: 6.5, z: 0}
+    neighbours: 62
+    isTargetPosition: 0
+  - name: BaseTile (-8, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: -8, z: 0}
+    worldPosition: {x: -6, y: 6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-7, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: 6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-6, 6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 6, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: 6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-5, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: 6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: -4, z: 0}
+    worldPosition: {x: -3, y: 6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: 6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-2, 6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 6, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: 6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (0, 6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 6, y: 0, z: 0}
+    worldPosition: {x: 0, y: 6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: 6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (2, 6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 6, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: 6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: 4, z: 0}
+    worldPosition: {x: 3, y: 6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (5, 6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 6, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: 6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (6, 6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 6, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: 6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (7, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: 6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (8, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: 8, z: 0}
+    worldPosition: {x: 6, y: 6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (9, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: 6.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (10, 6)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 6, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: 6, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (11, 6)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 6, y: 11, z: 0}
+    worldPosition: {x: 8.25, y: 6.5, z: 0}
+    neighbours: 60
+    isTargetPosition: 0
+  - name: BlockedTile (-8, 7)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 7, y: -8, z: 0}
+    worldPosition: {x: -6, y: 7, z: 0}
+    neighbours: 30
+    isTargetPosition: 0
+  - name: BlockedTile (-7, 7)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 7, y: -7, z: 0}
+    worldPosition: {x: -5.25, y: 7.5, z: 0}
+    neighbours: 62
+    isTargetPosition: 0
+  - name: BaseTile (-6, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: 7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-5, 7)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 7, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: 7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: -4, z: 0}
+    worldPosition: {x: -3, y: 7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: 7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-1, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: 7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (0, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: 0, z: 0}
+    worldPosition: {x: 0, y: 7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (1, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: 7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: 7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: 4, z: 0}
+    worldPosition: {x: 3, y: 7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (5, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: 7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (6, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: 7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (7, 7)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 7, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: 7.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (8, 7)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 7, y: 8, z: 0}
+    worldPosition: {x: 6, y: 7, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (9, 7)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 7, y: 9, z: 0}
+    worldPosition: {x: 6.75, y: 7.5, z: 0}
+    neighbours: 62
+    isTargetPosition: 0
+  - name: BlockedTile (10, 7)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 7, y: 10, z: 0}
+    worldPosition: {x: 7.5, y: 7, z: 0}
+    neighbours: 60
+    isTargetPosition: 0
+  - name: BlockedTile (-6, 8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 8, y: -6, z: 0}
+    worldPosition: {x: -4.5, y: 8, z: 0}
+    neighbours: 30
+    isTargetPosition: 0
+  - name: BlockedTile (-5, 8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 8, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: 8.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-4, 8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 8, y: -4, z: 0}
+    worldPosition: {x: -3, y: 8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, 8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 8, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: 8.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-2, 8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 8, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (-1, 8)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 8, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: 8.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (0, 8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 8, y: 0, z: 0}
+    worldPosition: {x: 0, y: 8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (1, 8)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 8, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: 8.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (2, 8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 8, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, 8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 8, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: 8.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, 8)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 8, y: 4, z: 0}
+    worldPosition: {x: 3, y: 8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (5, 8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 8, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: 8.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (6, 8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 8, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: 8, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (7, 8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 8, y: 7, z: 0}
+    worldPosition: {x: 5.25, y: 8.5, z: 0}
+    neighbours: 62
+    isTargetPosition: 0
+  - name: BlockedTile (8, 8)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 8, y: 8, z: 0}
+    worldPosition: {x: 6, y: 8, z: 0}
+    neighbours: 60
+    isTargetPosition: 0
+  - name: BlockedTile (-5, 9)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 9, y: -5, z: 0}
+    worldPosition: {x: -3.75, y: 9.5, z: 0}
+    neighbours: 30
+    isTargetPosition: 0
+  - name: BaseTile (-4, 9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 9, y: -4, z: 0}
+    worldPosition: {x: -3, y: 9, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (-3, 9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 9, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: 9.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (-2, 9)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 9, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 9, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (-1, 9)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 9, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: 9.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (0, 9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 9, y: 0, z: 0}
+    worldPosition: {x: 0, y: 9, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (1, 9)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 9, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: 9.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: MechSpawnTile (2, 9)
+    tile: {fileID: 11400000, guid: c8c5a3285d4392944ac65ae1c6d865c0, type: 2}
+    gridPosition: {x: 9, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 9, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (3, 9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 9, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: 9.5, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BaseTile (4, 9)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 9, y: 4, z: 0}
+    worldPosition: {x: 3, y: 9, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (5, 9)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 9, y: 5, z: 0}
+    worldPosition: {x: 3.75, y: 9.5, z: 0}
+    neighbours: 62
+    isTargetPosition: 0
+  - name: BlockedTile (6, 9)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 9, y: 6, z: 0}
+    worldPosition: {x: 4.5, y: 9, z: 0}
+    neighbours: 60
+    isTargetPosition: 0
+  - name: BlockedTile (-4, 10)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 10, y: -4, z: 0}
+    worldPosition: {x: -3, y: 10, z: 0}
+    neighbours: 30
+    isTargetPosition: 0
+  - name: BlockedTile (-3, 10)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 10, y: -3, z: 0}
+    worldPosition: {x: -2.25, y: 10.5, z: 0}
+    neighbours: 62
+    isTargetPosition: 0
+  - name: BaseTile (-2, 10)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 10, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 10, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (-1, 10)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 10, y: -1, z: 0}
+    worldPosition: {x: -0.75, y: 10.5, z: 0}
+    neighbours: 62
+    isTargetPosition: 0
+  - name: HQTile (0, 10)
+    tile: {fileID: 11400000, guid: bc46b4b7f9dd7a34ab533f03fc31f976, type: 2}
+    gridPosition: {x: 10, y: 0, z: 0}
+    worldPosition: {x: 0, y: 10, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (1, 10)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 10, y: 1, z: 0}
+    worldPosition: {x: 0.75, y: 10.5, z: 0}
+    neighbours: 62
+    isTargetPosition: 0
+  - name: BaseTile (2, 10)
+    tile: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
+    gridPosition: {x: 10, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 10, z: 0}
+    neighbours: 63
+    isTargetPosition: 0
+  - name: BlockedTile (3, 10)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 10, y: 3, z: 0}
+    worldPosition: {x: 2.25, y: 10.5, z: 0}
+    neighbours: 62
+    isTargetPosition: 0
+  - name: BlockedTile (4, 10)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 10, y: 4, z: 0}
+    worldPosition: {x: 3, y: 10, z: 0}
+    neighbours: 60
+    isTargetPosition: 0
+  - name: BlockedTile (-2, 11)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 11, y: -2, z: 0}
+    worldPosition: {x: -1.5, y: 11, z: 0}
+    neighbours: 28
+    isTargetPosition: 0
+  - name: BlockedTile (0, 11)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 11, y: 0, z: 0}
+    worldPosition: {x: 0, y: 11, z: 0}
+    neighbours: 28
+    isTargetPosition: 0
+  - name: BlockedTile (2, 11)
+    tile: {fileID: 11400000, guid: b695dec7d8b2a224589721523ea695e2, type: 2}
+    gridPosition: {x: 11, y: 2, z: 0}
+    worldPosition: {x: 1.5, y: 11, z: 0}
+    neighbours: 28
+    isTargetPosition: 0
 --- !u!1001 &1670751421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3880,6 +6556,14 @@ PrefabInstance:
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
+      propertyPath: m_Tiles.Array.data[446].first.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
+      propertyPath: m_Tiles.Array.data[446].first.y
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
       propertyPath: m_TileAssetArray.Array.data[0].m_Data
       value: 
       objectReference: {fileID: 11400000, guid: 0ecc53ade93d6d74e933f746b3cd4471, type: 2}
@@ -5164,6 +7848,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
+      propertyPath: m_Tiles.Array.data[271].second.m_TileIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
       propertyPath: m_Tiles.Array.data[280].second.m_TileIndex
       value: 0
       objectReference: {fileID: 0}
@@ -5825,6 +8513,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
       propertyPath: m_Tiles.Array.data[445].second.m_TileIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
+      propertyPath: m_Tiles.Array.data[446].second.m_TileIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
@@ -7624,6 +10316,10 @@ PrefabInstance:
       value: 1073741825
       objectReference: {fileID: 0}
     - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
+      propertyPath: m_Tiles.Array.data[446].second.m_AllTileFlags
+      value: 1073741825
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
       propertyPath: m_Tiles.Array.data[4].second.m_TileColorIndex
       value: 3
       objectReference: {fileID: 0}
@@ -8692,6 +11388,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
+      propertyPath: m_Tiles.Array.data[271].second.m_TileColorIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
       propertyPath: m_Tiles.Array.data[280].second.m_TileColorIndex
       value: 0
       objectReference: {fileID: 0}
@@ -9353,6 +12053,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
       propertyPath: m_Tiles.Array.data[445].second.m_TileColorIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
+      propertyPath: m_Tiles.Array.data[446].second.m_TileColorIndex
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
@@ -11133,6 +13837,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
       propertyPath: m_Tiles.Array.data[445].second.m_TileObjectToInstantiateIndex
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245121112135602596, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
+      propertyPath: m_Tiles.Array.data[446].second.m_TileObjectToInstantiateIndex
       value: 65535
       objectReference: {fileID: 0}
     - target: {fileID: 6728560949139844945, guid: df67fd9a695425440bfaee2ba92b914e, type: 3}
