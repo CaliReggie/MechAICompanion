@@ -3,13 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pathfinding : MonoBehaviour
+
+public class Pathfinding
 {
     public static List<GridTile> FindPath(Vector3Int startGridPos, Vector3Int endGridPos, List<GridTile> gridTiles)
     {
         if (gridTiles == null || gridTiles.Count == 0)
         {
             Debug.LogWarning("Grid tiles list is empty or null!");
+            
+            return null;
+        }
+        
+        if (startGridPos == endGridPos)
+        {
+            Debug.Log("Start and End positions are the same!");
             
             return null;
         }
