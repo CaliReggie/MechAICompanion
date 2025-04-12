@@ -8,37 +8,60 @@ using UnityEngine.Tilemaps;
 [RequireComponent(typeof(Tilemap))]
 public class TileGrid : MonoBehaviour
 {
+    public static TileGrid Instance { get; private set; }
+    
     [Header("Tile Grid Generation")]
+    
+    [Space]
     
     [SerializeField] private bool clearGridTiles;
     
     [SerializeField] private bool parseToGridTiles;
     
+    [field: SerializeField] public List<GridTile> GridTiles { get; private set; }
+    
     [Header("Tile Grid Settings")]
+    
+    [Space]
     
     [SerializeField] private Tile[] ignoredTiles;
     
-    [Header("Debug")]
+    [Header("Position Debug")]
+    
+    [Space]
     
     [SerializeField] private bool showAllPositions;
 
     [SerializeField] private bool showTargetPositions;
     
-    [Header("Grid Tiles")]
+    [Header("Pathfinding Debug")]
     
-    [SerializeField] private List<GridTile> gridTiles;
+    [Space]
+    
+    [SerializeField] private Vector3Int startGridPos;
+
+    [SerializeField] private Vector3Int endGridPos;
+    
+    [Space]
+    
+    [SerializeField] private bool findPath;
+    
+    [SerializeField] private bool clearPath;
+    
+    [Space]
+    
+    [SerializeField] private List<GridTile> currentPath;
     
     //Private, or Non Serialized Below
-    
-    private Tilemap _tileMap;
+    public Tilemap TileMap { get; private set; }
 
     private void OnValidate()
     {
         if (clearGridTiles)
         {
-            if (gridTiles != null)
+            if (GridTiles != null)
             {
-                gridTiles.Clear();
+                GridTiles.Clear();
             }
             
             clearGridTiles = false;
@@ -48,27 +71,88 @@ public class TileGrid : MonoBehaviour
         {
             ReadTileMap();
             
-            SetGridTileNeighbors();
+            GridTiles = GridTile.SetGridTileNeighbors(GridTiles, TileMap, ignoredTiles);
             
             parseToGridTiles = false;
         }
+        
+        if (findPath)
+        {
+            currentPath = Pathfinding.FindPath(startGridPos, endGridPos, GridTiles);
+            
+            findPath = false;
+        }
+        
+        if (clearPath)
+        {
+            if (currentPath != null)
+            {
+                currentPath.Clear();
+            }
+            
+            currentPath = null;
+            
+            clearPath = false;
+        }
     }
-    
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(Instance);
+        }
+        
+        Instance = this;
+        
+        
+        if (TileMap == null)
+        {
+            TileMap = GetComponent<Tilemap>();
+        }
+        
+        if (GridTiles == null)
+        {
+            GridTiles = new List<GridTile>();
+        }
+        else
+        {
+            GridTiles.Clear();
+        }
+        
+        if (ignoredTiles == null)
+        {
+            ignoredTiles = Array.Empty<Tile>();
+        }
+        
+        ReadTileMap();
+        
+        GridTiles = GridTile.SetGridTileNeighbors(GridTiles, TileMap, ignoredTiles);
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
+        }
+    }
+
     private void ReadTileMap()
     {
-        if (_tileMap == null)
+        if (TileMap == null)
         {
-            _tileMap = GetComponent<Tilemap>();
+            TileMap = GetComponent<Tilemap>();
         }
         
-        if (gridTiles != null)
+        if (GridTiles != null)
         {
-            gridTiles.Clear();
+            GridTiles.Clear();
         }
         
-        gridTiles = new List<GridTile>();
+        GridTiles = new List<GridTile>();
         
-        BoundsInt bounds = _tileMap.cellBounds;
+        BoundsInt bounds = TileMap.cellBounds;
         Tile currTile = null;
 
         for (int x = bounds.x; x < bounds.xMax; x++)
@@ -86,7 +170,7 @@ public class TileGrid : MonoBehaviour
                         continue;
                     }
                     
-                    gridTiles.Add(new GridTile(currTile, position, _tileMap));
+                    GridTiles.Add(new GridTile(currTile, position, TileMap));
                 }
             }
         }
@@ -95,50 +179,39 @@ public class TileGrid : MonoBehaviour
         
         void TryGetTile(Vector3Int position, out Tile tile) //Check if tilemap is null before using
         {
-            tile = _tileMap.GetTile<Tile>(position);
+            tile = TileMap.GetTile<Tile>(position);
         }
     }
     
-    private void SetGridTileNeighbors()
+    public Vector3 ClosestGridPosAtWorldPos(Vector3 worldPos)
     {
-        if (gridTiles == null || gridTiles.Count == 0) { return; }
+        Vector3Int gridPos = TileMap.WorldToCell(worldPos);
         
-        if (_tileMap == null)
+        GridTile closestTile = GridTiles.Find(t => t.gridPosition == gridPos);
+        
+        if (closestTile != null)
         {
-            _tileMap = GetComponent<Tilemap>();
+            return closestTile.worldPosition;
         }
         
-        foreach (GridTile tile in gridTiles)
-        {
-            tile.neighbours = GridTile.eNeighbours.none;
-            
-            foreach (GridTile.eNeighbours neighbour in Enum.GetValues(typeof(GridTile.eNeighbours)))
-            {
-                if (neighbour == GridTile.eNeighbours.none) { continue; }
-                
-                Vector3Int offset = tile.FlatHexOffsets[neighbour];
-                
-                Vector3Int neighbourPosition = tile.gridPosition + offset;
-                
-                if (gridTiles.Exists(t => t.gridPosition == neighbourPosition))
-                {
-                    Tile neighbourTile = _tileMap.GetTile<Tile>(neighbourPosition);
-
-                    if (neighbourTile == null || ignoredTiles != null &&
-                        Array.Exists(ignoredTiles, t => t == neighbourTile))
-                    {
-                        Debug.Log("Tile is null or ignored");
-                        
-                        continue;
-                    }
-                    
-                    tile.neighbours |= neighbour;
-                }
-            }
-        }
+        return Vector3.zero;
     }
     
+    public GridTile ClosestGridTileAtWorldPos(Vector3 worldPos)
+    {
+        Vector3Int gridPos = TileMap.WorldToCell(worldPos);
+        
+        GridTile closestTile = GridTiles.Find(t => t.gridPosition == gridPos);
+        
+        if (closestTile != null)
+        {
+            return closestTile;
+        }
+        
+        return null;
+    }
     
+        
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
@@ -153,18 +226,27 @@ public class TileGrid : MonoBehaviour
             ShowTargetPositions();
         }
         
+        if (currentPath != null)
+        {
+            Gizmos.color = Color.green;
+            foreach (var tile in currentPath)
+            {
+                Gizmos.DrawWireCube(tile.worldPosition, Vector3.one * 0.3f);
+            }
+        }
+        
         return;
         
         void ShowAllPositions()
         {
-            if (gridTiles == null || gridTiles.Count == 0) { return; }
+            if (GridTiles == null || GridTiles.Count == 0) { return; }
             
-            if (_tileMap == null)
+            if (TileMap == null)
             {
-                _tileMap = GetComponent<Tilemap>();
+                TileMap = GetComponent<Tilemap>();
             }
             
-            foreach (GridTile tile in gridTiles)
+            foreach (GridTile tile in GridTiles)
             {
                 Gizmos.DrawSphere(tile.worldPosition, 0.25f);
             }
@@ -172,83 +254,22 @@ public class TileGrid : MonoBehaviour
         
         void ShowTargetPositions()
         {
-            if (gridTiles == null || gridTiles.Count == 0) { return; }
+            if (GridTiles == null || GridTiles.Count == 0) { return; }
             
-            if (_tileMap == null)
+            if (TileMap == null)
             {
-                _tileMap = GetComponent<Tilemap>();
+                TileMap = GetComponent<Tilemap>();
             }
 
-            foreach (GridTile tile in gridTiles)
+            foreach (GridTile tile in GridTiles)
             {
                 if (tile.isTargetPosition)
                 {
+                    Gizmos.color = Color.red;
                     Gizmos.DrawSphere(tile.worldPosition, 0.25f);
                 }
             }
         }
         
-    }
-
-    private void Awake()
-    {
-        _tileMap = GetComponent<Tilemap>();
-    }
-    
-    
-    [Serializable]
-    public class GridTile
-    {
-        [System.Flags] public enum eNeighbours
-        {
-            none = 0,
-            up = 1,
-            upRight = 2,
-            downRight = 4,
-            down = 8,
-            downLeft = 16,
-            upLeft = 32,
-        }
-        
-        public readonly Dictionary<eNeighbours, Vector3Int> FlatHexOffsets = new ()
-        {
-            {eNeighbours.up, new Vector3Int(0, 1, 0)},
-            {eNeighbours.upRight, new Vector3Int(1, 0, 0)},
-            {eNeighbours.downRight, new Vector3Int(1, -1, 0)},
-            {eNeighbours.down, new Vector3Int(0, -1, 0)},
-            {eNeighbours.downLeft, new Vector3Int(-1, -1, 0)},
-            {eNeighbours.upLeft, new Vector3Int(-1, 0, 0)}
-        };
-        
-        [Header("Identification")]
-        
-        public string name;
-        
-        public Tile tile;
-        
-        [Header("Positioning")]
-        
-        public Vector3Int gridPosition;
-        
-        public Vector3 worldPosition;
-        
-        [Header("Neighbor Information")]
-        
-        public eNeighbours neighbours;
-        
-        [Header("Debug")]
-        
-        public bool isTargetPosition;
-        
-        public GridTile (Tile tile, Vector3Int gridPosition, Tilemap tilemap)
-        {
-            this.name = (tile.name + " (" + gridPosition.y + ", " + gridPosition.x + ")");
-            
-            this.tile = tile;
-            
-            this.gridPosition = gridPosition;
-            
-            this.worldPosition = tilemap.GetCellCenterWorld(gridPosition);
-        }
     }
 }
