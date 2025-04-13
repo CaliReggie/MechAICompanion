@@ -9,24 +9,12 @@ using UnityEngine.Tilemaps;
 public class TileGrid : MonoBehaviour
 {
     public static TileGrid Instance { get; private set; }
+
+    [Header("Pre Runtime Settings")]
+
+    [SerializeField] private TileDefinition[] tileDefinitions;
     
-    [Header("Tile Grid Generation")]
-    
-    [Space]
-    
-    [SerializeField] private bool clearGridTiles;
-    
-    [SerializeField] private bool parseToGridTiles;
-    
-    [field: SerializeField] public List<GridTile> GridTiles { get; private set; }
-    
-    [Header("Tile Grid Settings")]
-    
-    [Space]
-    
-    [SerializeField] private Tile[] ignoredTiles;
-    
-    [Header("Position Debug")]
+    [Header("Debug")]
     
     [Space]
     
@@ -34,77 +22,33 @@ public class TileGrid : MonoBehaviour
 
     [SerializeField] private bool showTargetPositions;
     
-    [Header("Pathfinding Debug")]
-    
-    [Space]
-    
-    [SerializeField] private Vector3Int startGridPos;
+    [Header("Tile Grid Dynamic")]
 
-    [SerializeField] private Vector3Int endGridPos;
+    [Tooltip("Exists for serialization purposes")]
+    [SerializeField] private bool emptyBool;
     
-    [Space]
-    
-    [SerializeField] private bool findPath;
-    
-    [SerializeField] private bool clearPath;
-    
-    [Space]
-    
-    [SerializeField] private List<GridTile> currentPath;
+    [field: SerializeField] public List<GridTile> GridTiles { get; private set; }
     
     //Private, or Non Serialized Below
     public Tilemap TileMap { get; private set; }
-
-    private void OnValidate()
-    {
-        if (clearGridTiles)
-        {
-            if (GridTiles != null)
-            {
-                GridTiles.Clear();
-            }
-            
-            clearGridTiles = false;
-        }
-        
-        if (parseToGridTiles)
-        {
-            ReadTileMap();
-            
-            GridTiles = GridTile.SetGridTileNeighbors(GridTiles, TileMap, ignoredTiles);
-            
-            parseToGridTiles = false;
-        }
-        
-        if (findPath)
-        {
-            currentPath = Pathfinding.FindPath(startGridPos, endGridPos, GridTiles);
-            
-            findPath = false;
-        }
-        
-        if (clearPath)
-        {
-            if (currentPath != null)
-            {
-                currentPath.Clear();
-            }
-            
-            currentPath = null;
-            
-            clearPath = false;
-        }
-    }
-
+    
     private void Awake()
     {
         if (Instance != null)
         {
-            Destroy(Instance);
+            Destroy(Instance.gameObject);
         }
         
         Instance = this;
         
+        if (tileDefinitions == null || tileDefinitions.Length < 1)
+        {
+            Debug.LogError("Tile definitions not set in Tile Grid!");
+
+            enabled = false;
+            
+            return;
+        }
         
         if (TileMap == null)
         {
@@ -120,14 +64,16 @@ public class TileGrid : MonoBehaviour
             GridTiles.Clear();
         }
         
-        if (ignoredTiles == null)
-        {
-            ignoredTiles = Array.Empty<Tile>();
-        }
-        
         ReadTileMap();
+
+        List<GridTile> neighboredTiles = new List<GridTile>(); 
         
-        GridTiles = GridTile.SetGridTileNeighbors(GridTiles, TileMap, ignoredTiles);
+        GridTile.SetGridTileNeighbors(GridTiles, TileMap, out neighboredTiles);
+        
+        if (neighboredTiles != null)
+        {
+            GridTiles = neighboredTiles;
+        }
     }
 
     private void OnDestroy()
@@ -136,14 +82,15 @@ public class TileGrid : MonoBehaviour
         {
             Instance = null;
         }
+        
+        if (GridTiles != null)
+        {
+            GridTiles.Clear();
+        }
     }
 
     private void ReadTileMap()
     {
-        if (TileMap == null)
-        {
-            TileMap = GetComponent<Tilemap>();
-        }
         
         if (GridTiles != null)
         {
@@ -165,12 +112,15 @@ public class TileGrid : MonoBehaviour
                 
                 if (currTile != null)
                 {
-                    if (ignoredTiles != null && Array.Exists(ignoredTiles, t => t == currTile))
+                    foreach (var tileDefinition in tileDefinitions)
                     {
-                        continue;
+                        if (tileDefinition.correspondingTileAsset == currTile)
+                        {
+                            GridTiles.Add(new GridTile(tileDefinition, position, TileMap));
+                            
+                            break;
+                        }
                     }
-                    
-                    GridTiles.Add(new GridTile(currTile, position, TileMap));
                 }
             }
         }
@@ -224,15 +174,6 @@ public class TileGrid : MonoBehaviour
         if (showTargetPositions)
         {
             ShowTargetPositions();
-        }
-        
-        if (currentPath != null)
-        {
-            Gizmos.color = Color.green;
-            foreach (var tile in currentPath)
-            {
-                Gizmos.DrawWireCube(tile.worldPosition, Vector3.one * 0.3f);
-            }
         }
         
         return;

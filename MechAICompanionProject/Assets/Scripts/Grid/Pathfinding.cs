@@ -6,88 +6,85 @@ using UnityEngine;
 
 public class Pathfinding
 {
-    public static List<GridTile> FindPath(Vector3Int startGridPos, Vector3Int endGridPos, List<GridTile> gridTiles)
+    public static void FindPath(List<GridTile> grid, Vector3Int startGridPos, Vector3Int endGridPos,
+        out List<GridTile> tilePath)
     {
-        if (gridTiles == null || gridTiles.Count == 0)
+        if (grid != null && grid.Count != 0 && startGridPos != endGridPos)
         {
-            Debug.LogWarning("Grid tiles list is empty or null!");
+            GridTile startTile = grid.Find(t => t.gridPosition == startGridPos);
+            GridTile endTile = grid.Find(t => t.gridPosition == endGridPos);
             
-            return null;
-        }
-        
-        if (startGridPos == endGridPos)
-        {
-            Debug.Log("Start and End positions are the same!");
-            
-            return null;
-        }
-        
-        
-        GridTile startTile = gridTiles.Find(t => t.gridPosition == startGridPos);
-        GridTile endTile = gridTiles.Find(t => t.gridPosition == endGridPos);
-
-        if (startTile == null || endTile == null)
-        {
-            Debug.LogWarning("Start or End tile not found!");
-            
-            return null;
-        }
-
-        var openSet = new List<PathNode>();
-        var closedSet = new HashSet<GridTile>();
-
-        PathNode startNode = new PathNode(startTile);
-        openSet.Add(startNode);
-
-        while (openSet.Count > 0)
-        {
-            // Get node with lowest fCost
-            openSet.Sort((a, b) => a.fCost.CompareTo(b.fCost));
-            PathNode currentNode = openSet[0];
-
-            if (currentNode.tile == endTile)
+            if (startTile != null && endTile != null)
             {
-                return RetracePath(currentNode);
-            }
-
-            openSet.Remove(currentNode);
-            closedSet.Add(currentNode.tile);
-
-            foreach (GridTile.eNeighbours dir in Enum.GetValues(typeof(GridTile.eNeighbours)))
-            {
-                if (dir == GridTile.eNeighbours.none) continue;
+                tilePath = null;
                 
-                if (!currentNode.tile.neighbours.HasFlag(dir)) continue;
+                var openSet = new List<PathNode>();
+                var closedSet = new HashSet<GridTile>();
 
-                Vector3Int offset = (Mathf.Abs(currentNode.tile.gridPosition.y) % 2 == 0) 
-                    ? currentNode.tile.EvenFlaxHexOffsets[dir]
-                    : currentNode.tile.OddFlaxHexOffsets[dir];
-
-                Vector3Int neighborPos = currentNode.tile.gridPosition + offset;
-                GridTile neighborTile = gridTiles.Find(t => t.gridPosition == neighborPos);
-
-                if (neighborTile == null || closedSet.Contains(neighborTile)) continue;
-
-                float tentativeG = currentNode.gCost + 1f; // Adjust if different tile costs
-
-                PathNode neighborNode = openSet.Find(n => n.tile == neighborTile);
-                if (neighborNode == null)
+                PathNode startNode = new PathNode(startTile);
+                openSet.Add(startNode);
+                
+                while (openSet.Count > 0)
                 {
-                    neighborNode = new PathNode(neighborTile);
-                    neighborNode.gCost = tentativeG;
-                    neighborNode.hCost = Vector3Int.Distance(neighborTile.gridPosition, endTile.gridPosition);
-                    neighborNode.parent = currentNode;
-                    openSet.Add(neighborNode);
+                    // Get node with lowest fCost
+                    openSet.Sort((a, b) => a.fCost.CompareTo(b.fCost));
+                    PathNode currentNode = openSet[0];
+
+                    if (currentNode.tile == endTile)
+                    {
+                        tilePath = RetracePath(currentNode);
+                        
+                        return;
+                    }
+
+                    openSet.Remove(currentNode);
+                    closedSet.Add(currentNode.tile);
+
+                    foreach (GridTile.eNeighbours dir in Enum.GetValues(typeof(GridTile.eNeighbours)))
+                    {
+                        if (dir == GridTile.eNeighbours.none) continue;
+                        
+                        if (!currentNode.tile.neighbours.HasFlag(dir)) continue;
+
+                        Vector3Int offset = (Mathf.Abs(currentNode.tile.gridPosition.y) % 2 == 0) 
+                            ? currentNode.tile.EvenFlaxHexOffsets[dir]
+                            : currentNode.tile.OddFlaxHexOffsets[dir];
+
+                        Vector3Int neighborPos = currentNode.tile.gridPosition + offset;
+                        GridTile neighborTile = grid.Find(t => t.gridPosition == neighborPos);
+
+                        if (neighborTile == null || closedSet.Contains(neighborTile)) continue;
+
+                        float tentativeG = currentNode.gCost + 1f; // Adjust if different tile costs
+
+                        PathNode neighborNode = openSet.Find(n => n.tile == neighborTile);
+                        if (neighborNode == null)
+                        {
+                            neighborNode = new PathNode(neighborTile);
+                            neighborNode.gCost = tentativeG;
+                            neighborNode.hCost = Vector3Int.Distance(neighborTile.gridPosition, endTile.gridPosition);
+                            neighborNode.parent = currentNode;
+                            openSet.Add(neighborNode);
+                        }
+                        else if (tentativeG < neighborNode.gCost)
+                        {
+                            neighborNode.gCost = tentativeG;
+                            neighborNode.parent = currentNode;
+                        }
+                    }
                 }
-                else if (tentativeG < neighborNode.gCost)
-                {
-                    neighborNode.gCost = tentativeG;
-                    neighborNode.parent = currentNode;
-                }
+                
+                
+            }
+            else
+            {
+                tilePath = null;
             }
         }
-
-        return null;
+        else
+        {
+            tilePath = null;
+        }
     }
     
     private static List<GridTile> RetracePath(PathNode endNode)

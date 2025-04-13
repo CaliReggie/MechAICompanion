@@ -3,25 +3,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class GridTileInteraction : MonoBehaviour
 {
     public enum eSelectionState
     {
-        None,
         General,
-        PathStart,
-        PathEnd,
-        PathFind
+        Placing,
+        Pathfinding
     }
     
     [Header("Selection")]
 
-    [SerializeField] private GameObject selectionOutlinePrefab;
+    [SerializeField] private GameObject outlinePrefab;
     
-    [Header("Pathing")]
+    [Header("All Rounder Button Definitions")]
     
-    [SerializeField] private GameObject pathPrefab;
+    [SerializeField] private ButtonDefinition[] allRounderButtonDefinitions;
+    
+    [Header("Defender Button Definitions")]
+    
+    [SerializeField] private ButtonDefinition[] defenderButtonDefinitions;
+    
+    [Header("Rushdown Button Definitions")]
+    
+    [SerializeField] private ButtonDefinition[] rushdownButtonDefinitions;
+    
+    [Header("Ranger Button Definitions")]
+    
+    [SerializeField] private ButtonDefinition[] rangerButtonDefinitions;
+    
+    [Header("Alien Button Definitions")]
+    
+    [SerializeField] private ButtonDefinition[] alienButtonDefinitions;
     
     [Header("Debug")]
     
@@ -29,40 +44,49 @@ public class GridTileInteraction : MonoBehaviour
     
     //Private, or Non Serialized Below
     
-    private GameObject _currentSelectionOutline;
+    private GridTile _currentSelectedTile;
     
-    private GridTile _currentGridTile;
+    private List<GameObject> _currentOutlines;
     
-    private GameObject _currentPathStart;
+    private List<GridTile> _currentTilePath = new ();
+
+    private List<BaseUnitSO> _units = new();
     
-    private GameObject _currentPathEnd;
+    //Properties
     
-    private List<GameObject> _currentPath = new ();
+    private ButtonDefinition[] AllMechButtonDefinitions
+    {
+        get
+        {
+            List<ButtonDefinition> allButtonDefinitions = new List<ButtonDefinition>();
+            
+            allButtonDefinitions.AddRange(allRounderButtonDefinitions);
+            allButtonDefinitions.AddRange(defenderButtonDefinitions);
+            allButtonDefinitions.AddRange(rushdownButtonDefinitions);
+            allButtonDefinitions.AddRange(rangerButtonDefinitions);
+
+            return allButtonDefinitions.ToArray();
+        }
+    }
 
     private void Start()
     {
-        if (selectionOutlinePrefab == null)
+        if (outlinePrefab == null)
         {
             Debug.LogError("Selection Outline Prefab is not assigned!");
             return;
         }
-        
-        if (pathPrefab == null)
-        {
-            Debug.LogError("Path Prefab is not assigned!");
-            return;
-        }
-        
         if (TileGrid.Instance == null)
         {
             Debug.LogError("TileGrid Instance is not assigned!");
             return;
         }
-        
-        _currentSelectionOutline = Instantiate(selectionOutlinePrefab, transform);
-        
-        _currentSelectionOutline.SetActive(false);
-        
+
+        _currentOutlines = new List<GameObject>();
+
+        _currentTilePath = new List<GridTile>();
+
+        _units = new List<BaseUnitSO>();
     }
 
     private void Update()
@@ -75,158 +99,182 @@ public class GridTileInteraction : MonoBehaviour
             {
                 case eSelectionState.General:
                     
-                    if (_currentPathStart != null)
-                    {
-                        Destroy(_currentPathStart);
-                    }
-                    
-                    if (_currentPathEnd != null)
-                    {
-                        Destroy(_currentPathEnd);
-                    }
-                    
                     TrySelectClick(mousePos);
                     
                     break;
                 
-                case eSelectionState.PathStart:
-                    
-                    if (_currentPathStart != null)
-                    {
-                        Destroy(_currentPathStart);
-                    }
-                    
-                    Vector3 placePos = TileGrid.Instance.ClosestGridPosAtWorldPos(mousePos);
-                    
-                    _currentPathStart = Instantiate(pathPrefab, placePos, Quaternion.identity);
+                case eSelectionState.Placing:
+
+                    TrySelectClick(mousePos);
                     
                     break;
                 
-                case eSelectionState.PathEnd:
-                    
-                    if (_currentPathEnd != null)
-                    {
-                        Destroy(_currentPathEnd);
-                    }
-                    
-                    placePos = TileGrid.Instance.ClosestGridPosAtWorldPos(mousePos);
-                    
-                    _currentPathEnd = Instantiate(pathPrefab, placePos, Quaternion.identity);
+                case eSelectionState.Pathfinding:
+
+                    TrySelectClick(mousePos);
                     
                     break;
             }
         }
+        
+        if (Input.GetMouseButtonUp(1))
+        {
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            
+            switch (selectionState)
+            {
+                case eSelectionState.General:
+                    break;
+                
+                case eSelectionState.Pathfinding:
+
+                    TryPathfindToPoint(mousePos);
+                    
+                    break;
+            }
+            
+        }
     }
     
-    private void TrySelectClick( Vector3 worldPos)
+    private bool TrySelectClick( Vector3 worldPos)
     {
-        _currentGridTile = TileGrid.Instance.ClosestGridTileAtWorldPos(worldPos);
+        ClearSelections();
         
-        if (_currentGridTile == null)
-        {
-            _currentSelectionOutline.SetActive(false);
-            
-            return;
-        } 
-        
-        _currentSelectionOutline.transform.position = _currentGridTile.worldPosition;
-        
-        _currentSelectionOutline.SetActive(true);
+        _currentSelectedTile = TileGrid.Instance.ClosestGridTileAtWorldPos(worldPos);
+
+        if (_currentSelectedTile == null) return false;
+
+        _currentOutlines.Add(Instantiate(outlinePrefab, _currentSelectedTile.worldPosition, Quaternion.identity));
+
+        return true;
     }
     
-    public void SetNoSelectionState()
+    private void ClearSelections()
     {
-        selectionState = eSelectionState.None;
-        
-        if (_currentSelectionOutline != null)
+        if (_currentOutlines != null)
         {
-            _currentSelectionOutline.SetActive(false);
-        }
-        
-        if (_currentPathStart != null)
-        {
-            Destroy(_currentPathStart);
+            foreach(var outline in _currentOutlines)
+            {
+                Destroy(outline.gameObject);
+            }
             
-            _currentPathStart = null;
+            _currentOutlines.Clear();
         }
         
-        if (_currentPathEnd != null)
-        {
-            Destroy(_currentPathEnd);
-            
-            _currentPathEnd = null;
-        }
-        
-        foreach (GameObject path in _currentPath)
-        {
-            Destroy(path);
-        }
-        
-        _currentPath.Clear();
+        _currentSelectedTile = null;
     }
     
-    public void SetGeneralSelectionState()
+    public void SetSelection()
     {
         selectionState = eSelectionState.General;
+
+        ClearSelections();
     }
     
-    public void SetPathStartSelectionState()
+    public void SetPlacing()
     {
-        selectionState = eSelectionState.PathStart;
+        selectionState = eSelectionState.Placing;
+
+        ClearSelections();
     }
     
-    public void SetPathEndSelectionState()
+    public void TryPlaceUnit(BaseUnitSO unit)
     {
-        selectionState = eSelectionState.PathEnd;
-    }
-    
-    public void SetPathFindSelectionState()
-    {
-        if (selectionState == eSelectionState.PathFind) { return; }
+        if (selectionState != eSelectionState.Placing) return;
         
+        if (_currentSelectedTile == null) return;
         
-        selectionState = eSelectionState.PathFind;
-        
-        if (_currentPathStart == null || _currentPathEnd == null)
+        if (_currentSelectedTile.Occupied)
         {
-            Debug.LogError("Path Start or End is not set!");
             return;
         }
         
-        Vector3Int startPos = TileGrid.Instance.ClosestGridTileAtWorldPos(_currentPathStart.transform.position).gridPosition;
+        //Searching all button definitions for direct unit match
+        //If valid, placing unit
+        //Diasbling button interaction once placed
         
-        Vector3Int endPos = TileGrid.Instance.ClosestGridTileAtWorldPos(_currentPathEnd.transform.position).gridPosition;
-        
-        List<GridTile> path = Pathfinding.FindPath(startPos, endPos, TileGrid.Instance.GridTiles);
-        
-        if (path == null || path.Count == 0)
+        if (unit.GetType() == Type.GetType("MechUnitSO"))
         {
-            Debug.LogError("Path not found!");
-            return;
-        }
-        
-        foreach (GameObject existingPath in _currentPath)
-        {
-            Destroy(existingPath);
-        }
-        
-        _currentPath.Clear();
-        
-        if (_currentPathStart != null)
-        {
-            Destroy(_currentPathStart);
-        }
-        
-        if (_currentPathEnd != null)
-        {
-            Destroy(_currentPathEnd);
-        }
-        
-        foreach (GridTile tile in path)
-        {
-            GameObject pathTile = Instantiate(pathPrefab, tile.worldPosition, Quaternion.identity);
             
-            _currentPath.Add(pathTile);
+            foreach (ButtonDefinition buttonDef in AllMechButtonDefinitions)
+            {
+                if (buttonDef.correspondingUnit == unit)
+                {
+                    buttonDef.correspondingButton.interactable = false;
+                    
+                    _currentSelectedTile.PlaceUnit(unit);
+                    
+                    break;
+                }
+            }
+        }
+        else if (unit.GetType() == Type.GetType("AlienUnitSO"))
+        {
+            foreach (ButtonDefinition buttonDef in alienButtonDefinitions)
+            {
+                if (buttonDef.correspondingUnit == unit)
+                {
+                    buttonDef.correspondingButton.interactable = false;
+                    
+                    _currentSelectedTile.PlaceUnit(unit);
+                    
+                    break;
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("Invalid Unit Type!");
+            return;
         }
     }
+    
+    public void SetPathfinding()
+    {
+        selectionState = eSelectionState.Pathfinding;
+        
+        ClearSelections();
+    }
+    
+    private void TryPathfindToPoint(Vector3 worldPos)
+    {
+        if (_currentSelectedTile == null) return;
+
+        GridTile endTile = TileGrid.Instance.ClosestGridTileAtWorldPos(worldPos);
+        
+        if (endTile == null) return;
+
+        List<GridTile> potentialPath = new List<GridTile>();
+
+        Pathfinding.FindPath(TileGrid.Instance.GridTiles, _currentSelectedTile.gridPosition, endTile.gridPosition, 
+            out potentialPath);
+        
+        if (potentialPath == null) return;
+
+        OutlinePath(potentialPath);
+    }
+    
+    private void OutlinePath(List<GridTile> tilePath)
+    {
+        if (tilePath == null || tilePath.Count < 1) return;
+
+        ClearSelections();
+
+        foreach (var tile in tilePath)
+        {
+            _currentOutlines.Add(Instantiate(outlinePrefab, tile.worldPosition, Quaternion.identity));
+        }
+    }
+}
+
+[Serializable]
+public class ButtonDefinition
+{
+    public string name;
+    
+    public Button correspondingButton;
+    
+    public BaseUnitSO correspondingUnit;
+    
+    public bool AlreadyPlaced => correspondingButton.interactable == false;
 }
