@@ -99,19 +99,19 @@ public class GridTileInteraction : MonoBehaviour
             {
                 case eSelectionState.General:
                     
-                    TrySelectClick(mousePos);
+                    TrySelect(mousePos);
                     
                     break;
                 
                 case eSelectionState.Placing:
 
-                    TrySelectClick(mousePos);
+                    TrySelect(mousePos);
                     
                     break;
                 
                 case eSelectionState.Pathfinding:
 
-                    TrySelectClick(mousePos);
+                    TrySelect(mousePos);
                     
                     break;
             }
@@ -136,7 +136,7 @@ public class GridTileInteraction : MonoBehaviour
         }
     }
     
-    private bool TrySelectClick( Vector3 worldPos)
+    private bool TrySelect( Vector3 worldPos)
     {
         ClearSelections();
         
@@ -162,6 +162,11 @@ public class GridTileInteraction : MonoBehaviour
         }
         
         _currentSelectedTile = null;
+        
+        if (_currentTilePath != null)
+        {
+            _currentTilePath.Clear();
+        }
     }
     
     public void SetSelection()
@@ -184,10 +189,7 @@ public class GridTileInteraction : MonoBehaviour
         
         if (_currentSelectedTile == null) return;
         
-        if (_currentSelectedTile.Occupied)
-        {
-            return;
-        }
+        if (_currentSelectedTile.Occupied) return;
         
         //Searching all button definitions for direct unit match
         //If valid, placing unit
@@ -238,7 +240,7 @@ public class GridTileInteraction : MonoBehaviour
     
     private void TryPathfindToPoint(Vector3 worldPos)
     {
-        if (_currentSelectedTile == null) return;
+        if (_currentSelectedTile == null || _currentSelectedTile.currentUnit == null) return;
 
         GridTile endTile = TileGrid.Instance.ClosestGridTileAtWorldPos(worldPos);
         
@@ -247,7 +249,7 @@ public class GridTileInteraction : MonoBehaviour
         List<GridTile> potentialPath = new List<GridTile>();
 
         Pathfinding.FindPath(TileGrid.Instance.GridTiles, _currentSelectedTile.gridPosition, endTile.gridPosition, 
-            out potentialPath);
+            out potentialPath, _currentSelectedTile.currentUnit.currentMoveRange);
         
         if (potentialPath == null) return;
 
@@ -264,6 +266,10 @@ public class GridTileInteraction : MonoBehaviour
         {
             _currentOutlines.Add(Instantiate(outlinePrefab, tile.worldPosition, Quaternion.identity));
         }
+        
+        _currentSelectedTile = tilePath[0];
+        
+        _currentTilePath = tilePath;
     }
 }
 

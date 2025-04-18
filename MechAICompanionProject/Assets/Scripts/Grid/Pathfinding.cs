@@ -7,12 +7,18 @@ using UnityEngine;
 public class Pathfinding
 {
     public static void FindPath(List<GridTile> grid, Vector3Int startGridPos, Vector3Int endGridPos,
-        out List<GridTile> tilePath)
+        out List<GridTile> tilePath, int maxDistance = -1)
     {
         if (grid != null && grid.Count != 0 && startGridPos != endGridPos)
         {
             GridTile startTile = grid.Find(t => t.gridPosition == startGridPos);
             GridTile endTile = grid.Find(t => t.gridPosition == endGridPos);
+            
+            if (startTile == endTile)
+            {
+                tilePath = null;
+                return;
+            }
             
             if (startTile != null && endTile != null)
             {
@@ -32,7 +38,21 @@ public class Pathfinding
 
                     if (currentNode.tile == endTile)
                     {
-                        tilePath = RetracePath(currentNode);
+                        //if end tile is occupied, we want to retrace a path from the tile right before it
+                        if (currentNode.tile.Occupied) 
+                        {
+                            PathNode previousNode = currentNode.parent;
+                            while (previousNode != null && previousNode.tile.Occupied)
+                            {
+                                previousNode = previousNode.parent;
+                            }
+                            
+                            if (previousNode != null)
+                            {
+                                tilePath = RetracePath(previousNode, maxDistance);
+                            }
+                        }
+                        else tilePath = RetracePath(currentNode, maxDistance);
                         
                         return;
                     }
@@ -45,6 +65,8 @@ public class Pathfinding
                         if (dir == GridTile.eNeighbours.none) continue;
                         
                         if (!currentNode.tile.neighbours.HasFlag(dir)) continue;
+                        
+                        if (currentNode.tile.Occupied && currentNode != startNode) continue;
 
                         Vector3Int offset = (Mathf.Abs(currentNode.tile.gridPosition.y) % 2 == 0) 
                             ? currentNode.tile.EvenFlaxHexOffsets[dir]
@@ -87,7 +109,7 @@ public class Pathfinding
         }
     }
     
-    private static List<GridTile> RetracePath(PathNode endNode)
+    private static List<GridTile> RetracePath(PathNode endNode, int maxDistance = -1)
     {
         List<GridTile> path = new List<GridTile>();
         PathNode currentNode = endNode;
@@ -99,6 +121,12 @@ public class Pathfinding
         }
 
         path.Reverse();
+        
+        if (maxDistance > 0 && path.Count > maxDistance + 1)
+        {
+            path = path.GetRange(0, maxDistance + 1);
+        }
+        
         return path;
     }
     

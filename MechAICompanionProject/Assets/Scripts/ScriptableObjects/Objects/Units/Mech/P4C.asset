@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68656484e6a5b4b4c8e7340cb737db30, type: 3}
-  m_Name: TestMechUnit
+  m_Name: P4C
   m_EditorClassIdentifier: 
   model: {fileID: 7745785945363060538, guid: 082c2c0e05a93794680d8fae8ddf386e, type: 3}
   maxHealth: 0
